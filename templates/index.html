@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <div class="jumbotron text-center">
+        <h3>Aydın Vardar Bloğuna Hoşgeldiniz!</h3>
+        <p>Bu blogta developerlar olarak blog yazılarınızı paylaşabilirsiniz ve insanlara yardımcı olabilirsiniz..</p>
+    </div>
+<ul>
+
+    {% for article in articles %}
+        <li>Article Id: {{article.id}} - Title: {{article.title}} - Content: {{article.content}}</li>
+    {% endfor %}
+
+</ul>
+
+{% endblock %}
